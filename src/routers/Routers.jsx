@@ -22,6 +22,7 @@ const Routers = createBrowserRouter([
             {
                 path:"/service/:id",
                 element:<ServiceDetails></ServiceDetails>,
+                loader:()=>fetch('/corporate.json'),
             },
             {
                 path:"/about-us",

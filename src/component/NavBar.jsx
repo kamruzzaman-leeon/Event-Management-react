@@ -3,10 +3,10 @@ import CustomNavLink from "./CustomNavLink";
 
 const NavBar = () => {
     const navlinks = <>
-        <li className="md:mx-5"><CustomNavLink to="/">Home</CustomNavLink></li>
-        <li className="md:mx-5"><CustomNavLink to="/About-us">About Us</CustomNavLink></li>
-        <li className="md:mx-5"><CustomNavLink to="/login">Login</CustomNavLink></li>
-        <li className="md:mx-5"><CustomNavLink to="/Register">Register</CustomNavLink></li>
+        <li className="md:mx-5" data-aos="slide-right"><CustomNavLink to="/">Home</CustomNavLink></li>
+        <li className="md:mx-5" data-aos="slide-right"><CustomNavLink to="/About-us">About Us</CustomNavLink></li>
+        <li className="md:mx-5" data-aos="slide-right"><CustomNavLink to="/login">Login</CustomNavLink></li>
+        <li className="md:mx-5" data-aos="slide-right"><CustomNavLink to="/Register">Register</CustomNavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -19,15 +19,15 @@ const NavBar = () => {
                         {navlinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">EventMaster</a>
+                <a className="btn btn-ghost normal-case text-xl" data-aos="slide-bottom">EventMaster</a>
             </div>
-           
+
             <div className="flex-none">
-            
+
                 <ul className="menu menu-horizontal px-1 hidden lg:flex">
                     {navlinks}
                 </ul>
-            
+
                 <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">

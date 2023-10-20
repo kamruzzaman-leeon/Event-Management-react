@@ -3,16 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script src="bower_components/aos/dist/aos.js"></script> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        offset: 200,
+        duration: 600,
+        easing: 'ease-in-sine',
+        delay: 150,
+      });
     </script>
   </body>
 </html>
