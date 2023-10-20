@@ -1,18 +1,24 @@
+import PropTypes from 'prop-types';
 
-
-const Banner = () => {
+const Banner = ({banner}) => {
+    const {title,description, img} =banner
+    // console.log(title)
     return (
-        <div className="hero h-4/5" style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>
-  <div className="hero-overlay bg-opacity-60"></div>
-  <div className="hero-content text-center text-neutral-content">
-    <div className="max-w-md">
-      
-      <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      
+      <div className="hero container mx-auto h-[50vh]" style={{ backgroundImage: `url(${img})` }}>
+      <div className="hero-overlay bg-opacity-60"></div>
+      <div className="hero-content text-center text-neutral-content">
+        <div className="max-w-md">
+          <h2 className='text-4xl font-bold mb-5'>{title}</h2>
+          <p className="mb-5">{description}</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+    
     );
 };
+
+Banner.propTypes={
+  banner: PropTypes.object,
+}
 
 export default Banner;
