@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 
 const Banner = ({banner}) => {
     const {title,description, img} =banner
-    // console.log(title)
+    console.log(title)
     return (
-      <div className="hero container mx-auto h-[50vh]" style={{ backgroundImage: `url(${img})` }}>
+      <div className="hero  h-[50vh]" style={{ backgroundImage: `url(${img})` }}>
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">

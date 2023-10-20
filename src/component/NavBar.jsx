@@ -9,7 +9,7 @@ const NavBar = () => {
         <li className="md:mx-5"><CustomNavLink to="/Register">Register</CustomNavLink></li>
     </>
     return (
-        <div className="navbar bg-base-100 sticky top-0">
+        <div className="navbar bg-base-100">
             <div className="flex-1">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
