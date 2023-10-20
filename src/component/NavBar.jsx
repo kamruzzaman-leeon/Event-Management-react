@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CustomNavLink from "./CustomNavLink";
 
 
@@ -19,7 +20,7 @@ const NavBar = () => {
                         {navlinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl" data-aos="slide-bottom">EventMaster</a>
+                <Link to='/' className="btn btn-ghost normal-case text-xl" data-aos="slide-bottom">EventMaster</Link>
             </div>
 
             <div className="flex-none">
