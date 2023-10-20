@@ -7,8 +7,8 @@ import Routers from './routers/Routers'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    
+    <HelmetProvider>
       <RouterProvider router={Routers}></RouterProvider>
-   
+    </HelmetProvider>
   </React.StrictMode>,
 )

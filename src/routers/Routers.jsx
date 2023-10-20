@@ -5,8 +5,10 @@ import Home from '../component/Home';
 import Services from '../component/Services';
 import Service from '../component/Service';
 import AboutUs from '../component/AboutUs';
-import ErrorPage from '../component/ErrorPage';
+// import ErrorPage from '../component/ErrorPage';
 import NotFound from '../component/NotFound';
+import Login from '../component/login';
+import Register from '../component/Register';
 
 const Routers = createBrowserRouter([
     {
@@ -29,6 +31,14 @@ const Routers = createBrowserRouter([
             {
                 path:"/about-us",
                 element:<AboutUs></AboutUs>,
+            },
+            {
+                path:"/login",
+                element:<Login></Login>,
+            },
+            {
+                path:"/register",
+                element:<Register></Register>,
             },
             {
                 path:"*",
