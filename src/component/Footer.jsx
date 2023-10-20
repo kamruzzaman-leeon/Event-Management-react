@@ -1,10 +1,12 @@
-import React from 'react';
+
 
 const Footer = () => {
     return (
-        <div>
-            
-        </div>
+        <footer className="footer footer-center p-4 bg-base-200 text-base-content">
+  <aside>
+    <p>Copyright © 2023 - All right reserved by Event Master Ltd</p>
+  </aside>
+</footer>
     );
 };
 
