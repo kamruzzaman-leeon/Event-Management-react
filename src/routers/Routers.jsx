@@ -7,6 +7,7 @@ import NotFound from '../pages/NotFound';
 import ServiceDetails from '../pages/ServiceDetails';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
+import PrivateRoute from './PrivateRoute';
 
 const Routers = createBrowserRouter([
     {
@@ -20,7 +21,7 @@ const Routers = createBrowserRouter([
             },
             {
                 path:"/serviceDetails/:id",
-                element:<ServiceDetails></ServiceDetails>,
+                element:<PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>,
                 loader:()=>fetch('/corporate.json'),
             },
             {
