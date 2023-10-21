@@ -8,10 +8,10 @@ const CustomNavLink = ({to,children}) => {
             to={to}
             className={({ isActive, isPending }) =>
                 isActive
-                    ? "active btn btn-primary normal-case text-lg"
+                    ? "active btn btn-primary normal-case text-xl"
                     : isPending
                         ? "pending"
-                        : ""
+                        : "p-4"
             }
         >
           {children}

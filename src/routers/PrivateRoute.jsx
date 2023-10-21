@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const PrivateRoute = ({ children }) => {
 
     const { user,loading} = useContext(AuthContext)
-    const location = useLocation();
+    const location = useLocation()
     // console.log(location)
     if(loading)
     {
@@ -15,12 +15,12 @@ const PrivateRoute = ({ children }) => {
                 </div>
     }
 
-    if(!user){
+    if(!user?.email){
         return <Navigate state={location.pathname} to="/login"></Navigate>
         }
-        else{
-            return children;
-        }
+       
+    return children;
+      
     
 };
 
