@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
+import toast from "react-hot-toast";
 
 
 const Login = () => {
@@ -13,6 +14,7 @@ const Login = () => {
         const email =form.get('email')
         const password = form.get('password')
         signIn(email,password)
+        
         .then(result=>{
                 
           // console.log(result.user)
