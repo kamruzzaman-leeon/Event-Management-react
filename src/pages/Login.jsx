@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
@@ -5,7 +6,8 @@ const Login = () => {
         e.preventDefault();
         console.log(e.currentTarget)
         const form = new FormData(e.currentTarget)
-        console.log(form)
+        const email =form.get('email')
+        const password = form.get('password')
     }
     return (
         <div className="hero min-h-screen bg-base-200">
@@ -27,14 +29,18 @@ const Login = () => {
             <span className="label-text">Password</span>
           </label>
           <input type="password" placeholder="password" name= "password" className="input input-bordered" required />
-          <label className="label">
+          {/* <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-          </label>
+          </label> */}
         </div>
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
         </div>
       </form>
+      <div className="label mx-auto mb-2">
+          <p className="label-text-alt"> New Here?</p>
+          <Link to='/register' className="label-text-alt link link-hover text-blue-500 font-bold">Register</Link>
+          </div>
     </div>
   </div>
 </div>

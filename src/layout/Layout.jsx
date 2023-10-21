@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "../component/NavBar";
 import Footer from "../component/Footer";
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -10,6 +11,7 @@ const Layout = () => {
            
             <NavBar></NavBar>
             <div className="min-h-screen p-5">
+                <Toaster/>
                 <Outlet></Outlet>
             </div>
 
