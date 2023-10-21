@@ -30,8 +30,13 @@ const Login = () => {
       })
       .catch(error => {
 
-        // console.error(error)
-        toast.error('Something wrong here!')
+        if (error.code === 'auth/wrong-password') {
+          toast.error('Incorrect password. Please try again.');
+        } else if (error.code === 'auth/user-not-found') {
+          toast.error('No user with this email found. Please register or check your email.');
+        } else {
+          toast.error('An error occurred while trying to log in.');
+        }
       })
 
   }
@@ -40,7 +45,11 @@ const Login = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Login now!</h1>
-          <p className="py-6">Welcome to EventMaster!</p>
+          <h3 className="py-6 text-3xl">Welcome to EventMaster!</h3>
+          <p className="py-6">
+
+            Are you ready to unlock a world of seamless event planning and management? EventMaster is your gateway to a universe of exciting possibilities in the world of events. Whether you&apos;re an event organizer, a seasoned planner, or someone looking to attend thrilling events, we&apos;ve got you covered.
+          </p>
         </div>
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form onSubmit={handleLogin} className="card-body">
