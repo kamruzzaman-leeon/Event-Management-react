@@ -6,8 +6,8 @@ import toast from "react-hot-toast";
 
 
 const NavBar = () => {
-    const{user, logOut, loggedIn} =useContext(AuthContext);
-
+    const{user, logOut} =useContext(AuthContext);
+    console.log(user)
     const handleLogout =() =>{
          logOut()
          .then(result=>{
@@ -25,7 +25,7 @@ const NavBar = () => {
             <li className="md:mx-5"><CustomNavLink to="/">Home</CustomNavLink></li>
             <li className="md:mx-5"><CustomNavLink to="/About-us">About Us</CustomNavLink></li>
             {
-                !loggedIn && 
+                !user && 
                     <>
                         <li className="md:mx-5"><CustomNavLink to="/login">Login</CustomNavLink></li>
                         <li className="md:mx-5"><CustomNavLink to="/Register">Register</CustomNavLink></li>
@@ -59,7 +59,7 @@ const NavBar = () => {
                 </ul>
 
                 {
-                loggedIn && user &&
+                 user &&
                     <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">

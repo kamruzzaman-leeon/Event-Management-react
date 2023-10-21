@@ -4,22 +4,24 @@ import { Navigate, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const PrivateRoute = ({ children }) => {
-    const { user,loading,loggedIn } = useContext(AuthContext)
+
+    const { user,loading} = useContext(AuthContext)
     const location = useLocation();
     // console.log(location)
     if(loading)
     {
-        return (
-            <div className='flex justify-center items-center'>
+        return <div className='flex justify-center items-center'>
                  <span className="loading loading-bars loading-lg"></span>
-        </div>
-        )
+                </div>
     }
 
-    if(user && loggedIn){
-          return children;
+    if(!user){
+        return <Navigate state={location.pathname} to="/login"></Navigate>
         }
-    return <Navigate state={location.pathname} to="/login"></Navigate>
+        else{
+            return children;
+        }
+    
 };
 
 PrivateRoute.propTypes={
