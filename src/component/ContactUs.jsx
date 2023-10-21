@@ -1,7 +1,7 @@
 
 
 const ContactUs = () => (
-    <div className="bg-blue-50 p-4 md:p-8 lg:flex lg:items-center">
+    <div className="bg-blue-100 p-4 md:p-8 lg:flex lg:items-center">
       <img
         src="https://i.ibb.co/ByQJC9x/Event-contact-us.jpg"
         className="max-w-full md:w-1/2 lg:w-1/3 rounded-lg shadow-2xl mb-4 md:mb-0"
