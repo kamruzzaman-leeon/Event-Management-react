@@ -2,13 +2,11 @@ import { Link } from "react-router-dom";
 import CustomNavLink from "./CustomNavLink";
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProvider";
-import { signOut } from "firebase/auth";
-import { Result } from "postcss";
 import toast from "react-hot-toast";
 
 
 const NavBar = () => {
-    const{user,logOut} =useContext(AuthContext);
+    const{user,signIn, logOut, loggedIn} =useContext(AuthContext);
 
     const handleLogout =() =>{
          logOut()
@@ -22,15 +20,24 @@ const NavBar = () => {
   
     }
 
-    const navlinks = <>
-        <li className="md:mx-5"><CustomNavLink to="/">Home</CustomNavLink></li>
-        <li className="md:mx-5"><CustomNavLink to="/About-us">About Us</CustomNavLink></li>
-        {
-            !user && <> <li className="md:mx-5"><CustomNavLink to="/login">Login</CustomNavLink></li>
-            <li className="md:mx-5"><CustomNavLink to="/Register">Register</CustomNavLink></li></>
-        }
+    const navlinks = (
+        <>
+            <li className="md:mx-5"><CustomNavLink to="/">Home</CustomNavLink></li>
+            <li className="md:mx-5"><CustomNavLink to="/About-us">About Us</CustomNavLink></li>
+            {
+                !loggedIn &&
+                    <>
+                        <li className="md:mx-5"><CustomNavLink to="/login">Login</CustomNavLink></li>
+                        <li className="md:mx-5"><CustomNavLink to="/Register">Register</CustomNavLink></li>
+                    </>
+               
+            }
+        </>
+    );
+    
+    
        
-    </>
+
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1">
@@ -50,8 +57,10 @@ const NavBar = () => {
                 <ul className="menu menu-horizontal px-1 hidden lg:flex">
                     {navlinks}
                 </ul>
+
                 {
-                    user && <div className="dropdown dropdown-end">
+                loggedIn &&
+                    <div className="dropdown dropdown-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                             <img src={null} />
@@ -63,7 +72,9 @@ const NavBar = () => {
                     </ul>
                 </div> 
                
-                }
+            }
+
+               
 
                 
 
