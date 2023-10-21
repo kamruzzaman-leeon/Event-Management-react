@@ -4,10 +4,10 @@ import CustomNavLink from "./CustomNavLink";
 
 const NavBar = () => {
     const navlinks = <>
-        <li className="md:mx-5" data-aos="slide-right"><CustomNavLink to="/">Home</CustomNavLink></li>
-        <li className="md:mx-5" data-aos="slide-right"><CustomNavLink to="/About-us">About Us</CustomNavLink></li>
-        <li className="md:mx-5" data-aos="slide-right"><CustomNavLink to="/login">Login</CustomNavLink></li>
-        <li className="md:mx-5" data-aos="slide-right"><CustomNavLink to="/Register">Register</CustomNavLink></li>
+        <li className="md:mx-5"><CustomNavLink to="/">Home</CustomNavLink></li>
+        <li className="md:mx-5"><CustomNavLink to="/About-us">About Us</CustomNavLink></li>
+        <li className="md:mx-5"><CustomNavLink to="/login">Login</CustomNavLink></li>
+        <li className="md:mx-5"><CustomNavLink to="/Register">Register</CustomNavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -20,7 +20,7 @@ const NavBar = () => {
                         {navlinks}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl" data-aos="slide-bottom">EventMaster</Link>
+                <Link to='/' className="btn btn-ghost normal-case text-xl">EventMaster</Link>
             </div>
 
             <div className="flex-none">

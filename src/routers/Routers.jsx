@@ -3,11 +3,10 @@ import { createBrowserRouter } from 'react-router-dom';
 import Layout from '../layout/Layout';
 import Home from '../pages/Home';
 import AboutUs from '../pages/AboutUs';
-// import ErrorPage from '../component/ErrorPage';
 import NotFound from '../pages/NotFound';
+import ServiceDetails from '../pages/ServiceDetails';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
-import ServiceDetails from '../pages/ServiceDetails';
 
 const Routers = createBrowserRouter([
     {
@@ -30,11 +29,11 @@ const Routers = createBrowserRouter([
             },
             {
                 path:"/login",
-                element:<Login></Login>,
+               element:<Login></Login>,
             },
             {
                 path:"/register",
-                element:<Register></Register>,
+                element:<Register></Register>
             },
             {
                 path:"*",
