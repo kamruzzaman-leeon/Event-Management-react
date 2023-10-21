@@ -13,7 +13,8 @@ const ServiceCard = ({serviceCard}) => {
   <div className="card-body">
     <h2 className="card-title">{title}</h2>
     <p>Price: <span className='font-bold'>{price}</span></p>
-    <p>{description.slice(0,150)}<Link className='text-blue-600' to={`serviceDetails/${id}`}>...See More</Link></p>
+    <p className=' text-justify'>{description.split(". ").slice(0, 2).join(". ") + "."}</p>
+    <button className='bg-blue-600 btn text-white'><Link to={`serviceDetails/${id}`}>See More Details</Link></button>
    
   </div>
 </div>

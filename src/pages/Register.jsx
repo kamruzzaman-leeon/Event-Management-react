@@ -20,24 +20,26 @@ const Register = () => {
         createUser(email,password)
         .then(result=>{
                 
-          console.log(result.user)
+          // console.log(result.user)
           toast.success('successfully user Created!')    
           
         })
         .catch(error=>{
          
-          console.error(error)
+          // console.error(error)
           toast.error('Something wrong here!')
         })
 
     }
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-base-100">
   <div className="hero-content flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
-      <h1 className="text-5xl font-bold">Register now!</h1>
-      <p className="py-6">Welcome to Event Master</p>
+      <h1 className="text-5xl font-bold mb-4">Register now!</h1>
+      <h3 className="text-3xl normal-case">Welcome to the Event Master Register Page!</h3>
+      <p className="py-6">
+Our Event Master Register Page is your gateway to a world of seamless event planning and management. Whether you&apos;re an event organizer, planner, or someone looking to attend exciting events, we&apos;ve got you covered.</p>
     </div>
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form onSubmit={handleRegister} className="card-body">

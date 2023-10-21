@@ -33,7 +33,7 @@ const ServiceDetails = () => {
                     <p><span className='font-bold'>Location: </span>{details.location}</p>
                     <p><span className='font-bold'>Capacity: </span>{details.capacity}</p>
                    
-                   
+
 
                 </div>
             </div>
