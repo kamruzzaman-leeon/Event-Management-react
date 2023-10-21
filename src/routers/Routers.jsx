@@ -9,6 +9,7 @@ import Login from '../pages/Login';
 import Register from '../pages/Register';
 import PrivateRoute from './PrivateRoute';
 import Career from '../pages/Career';
+import EventManagementCourse from '../pages/EventManagementCourse';
 
 const Routers = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ const Routers = createBrowserRouter([
             {
                 path:"/career",
                 element:<PrivateRoute><Career></Career></PrivateRoute>,
+            },
+            {
+                path:"/event-management-course",
+                element:<PrivateRoute><EventManagementCourse></EventManagementCourse></PrivateRoute>,
             },
             {
                 path:"*",

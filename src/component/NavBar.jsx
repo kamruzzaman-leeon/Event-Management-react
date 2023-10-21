@@ -9,6 +9,7 @@ const navlinks = (
         <li className="md:mx-5"><CustomNavLink to="/">Home</CustomNavLink></li>
         <li className="md:mx-5"><CustomNavLink to="/About-us">About Us</CustomNavLink></li>
         <li className="md:mx-5"><CustomNavLink to="/career">Career</CustomNavLink></li>
+        <li className="md:mx-5"><CustomNavLink to="/event-management-course">Event Management Course</CustomNavLink></li>
         
     </>
 );
