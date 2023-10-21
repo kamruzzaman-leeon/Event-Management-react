@@ -29,7 +29,7 @@ const EventFacilities = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-10">
+    <div className="bg-blue-100 py-10">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 gap-4">
           

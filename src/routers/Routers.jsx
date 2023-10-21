@@ -8,6 +8,7 @@ import ServiceDetails from '../pages/ServiceDetails';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 import PrivateRoute from './PrivateRoute';
+import Career from '../pages/Career';
 
 const Routers = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const Routers = createBrowserRouter([
             {
                 path:"/register",
                 element:<Register></Register>
+            },
+            {
+                path:"/career",
+                element:<PrivateRoute><Career></Career></PrivateRoute>,
             },
             {
                 path:"*",

@@ -8,8 +8,8 @@ const Banner = ({banner}) => {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <h2 className='text-4xl font-bold mb-5'data-aos="fade-right">{title}</h2>
-          <p className="mb-5 " data-aos="fade-left">{description}</p>
+          <h2 className='text-4xl font-bold mb-5'data-aos="zoom-in-down">{title}</h2>
+          <p className="mb-5 " data-aos="zoom-in-up">{description}</p>
         </div>
       </div>
     </div>
