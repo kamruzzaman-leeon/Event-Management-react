@@ -1,9 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const EventManagementCourse = () => {
   return (
     
       <div className="container mx-auto bg-blue-100 py-10">
+         <Helmet>
+                <title>Event Management Course</title>
+            </Helmet>
         <div className="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-3xl font-semibold mb-4">Event Management Course</h2>
           <p className="text-gray-600 mb-4">

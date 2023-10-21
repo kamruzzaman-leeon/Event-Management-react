@@ -1,6 +1,8 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Career = () => {
+    
     const jobOpportunities = [
         {
             title: 'Event Coordinator',
@@ -22,6 +24,9 @@ const Career = () => {
     return (
 
         <div className="container mx-auto bg-blue-100 p-10">
+            <Helmet>
+                <title>Career</title>
+            </Helmet>
             <h2 className="text-5xl font-bold mb-4">Event-Related Career Opportunities</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {jobOpportunities.map((job, index) => (

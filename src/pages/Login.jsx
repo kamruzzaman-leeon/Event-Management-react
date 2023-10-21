@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import toast from "react-hot-toast";
 import SocialLogin from "../component/SocialLogin";
+import { Helmet } from "react-helmet";
 // import SocialLogin from "../component/SocialLogin";
 
 
@@ -42,6 +43,9 @@ const Login = () => {
   }
   return (
     <div className="hero min-h-screen bg-base-200">
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Login now!</h1>

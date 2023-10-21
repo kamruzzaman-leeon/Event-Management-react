@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import { useContext } from "react";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 
 
@@ -51,6 +52,9 @@ const Register = () => {
 
   return (
     <div className="hero min-h-screen bg-base-100">
+       <Helmet>
+        <title>Register</title>
+      </Helmet>
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold mb-4">Register now!</h1>

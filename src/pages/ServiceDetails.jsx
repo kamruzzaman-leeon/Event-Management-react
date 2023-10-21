@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const ServiceDetails = () => {
@@ -20,6 +21,9 @@ const ServiceDetails = () => {
 
     return (
         <div className="container mx-auto my-20">
+             <Helmet>
+        <title>Service Details</title>
+      </Helmet>
             <div className="card  object-cover bg-base-100 p-2 md:p-0 shadow-xl" data-aos="flip-top"
                 data-aos-easing="ease-out-cubic"
                 data-aos-duration="1000">
