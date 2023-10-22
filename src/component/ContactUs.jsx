@@ -3,7 +3,7 @@
 const ContactUs = () => (
     <div className="bg-white p-4 md:p-8 grid grid-cols-1 md:grid-cols-2">
       <img
-        src="https://i.ibb.co/ByQJC9x/Event-contact-us.jpg"
+        src="https://i.ibb.co/C88kTPv/Event-contact-us.jpg"
         className="max-w-full md:w-3/4 rounded-lg shadow-2xl mb-4 md:mb-0"
         alt="Contact Us" data-aos="fade-up-right"
       />

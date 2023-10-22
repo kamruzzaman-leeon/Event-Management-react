@@ -43,7 +43,8 @@ const EventFacilities = () => {
         </div>
         <div>
           <div className="relative w-full aspect-w-16 aspect-h-9" data-aos="fade-up-left">
-          <iframe width="100%" height="70%"
+          <iframe className="max-w-full h-auto md:w-3/4 rounded-lg shadow-2xl mb-4 md:mb-0"
+        alt="Contact Us" data-aos="fade-up-right"
            src="https://www.youtube.com/embed/HILkVHiMiqY?si=B96CwkD8Fp-wIUAO" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
