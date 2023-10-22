@@ -23,7 +23,7 @@ const Career = () => {
 
     return (
 
-        <div className="container mx-auto bg-blue-100 p-10">
+        <div className="container mx-auto bg-white  p-10">
             <Helmet>
                 <title>Career</title>
             </Helmet>
