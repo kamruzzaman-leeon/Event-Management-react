@@ -20,7 +20,7 @@ const ServiceDetails = () => {
 
 
     return (
-        <div className="container mx-auto my-20">
+        <div className="container mx-auto mb-20">
              <Helmet>
         <title>Service Details</title>
       </Helmet>

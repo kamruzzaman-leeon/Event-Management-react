@@ -51,7 +51,7 @@ const Register = () => {
   }
 
   return (
-    <div className="hero min-h-screen bg-base-100">
+    <div className="hero min-h-screen bg-white shadow-md">
        <Helmet>
         <title>Register</title>
       </Helmet>
