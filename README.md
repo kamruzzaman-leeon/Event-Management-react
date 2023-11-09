@@ -2,7 +2,7 @@
 
 Welcome to EventMaster, a comprehensive platform designed to help you plan and manage your events seamlessly. Whether you're an event organizer, planner, or someone looking to attend exciting events, EventMaster has you covered.
 
-[Live Demo](https://event-master-319e2.web.app/) | [GitHub Repository](https://github.com/programming-hero-web-course-4/b8a8-donation-campaign-kamruzzaman-leeon)
+[Live Demo](https://event-master-319e2.web.app/) | [GitHub Repository](https://github.com/kamruzzaman-leeon/Event-Management-react.git)
 
 ## Table of Contents
 
@@ -44,7 +44,7 @@ At EventMaster, we believe in the power of events to connect people and ideas. O
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/programming-hero-web-course-4/b8a8-donation-campaign-kamruzzaman-leeon.git`
+1. Clone the repository: `git clone https://github.com/kamruzzaman-leeon/Event-Management-react.git`
 2. Install dependencies: `npm install`
 
 ## Usage
